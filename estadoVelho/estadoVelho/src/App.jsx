@@ -1,25 +1,39 @@
 import { useState } from 'react'
 import './App.css'
+import Convert from './components/Convert'
 
 function App() {
+  const [nome, setNome] = useState("Ulib")
   const [usuario, setUsuario] = useState("Jack")
+  const [senha, setSenha] = useState()
 
-  let nome = "Ulib"
+  // let nome = "Ulib"
   function lerNome() {
-    nome = prompt("Nome:")
-    console.log(nome);
+    let nombre = prompt("Novo nome:")
+    setNome(nombre)
   }
   function lerUsuario() {
     let resposta = prompt("Novo usuário:")
     setUsuario(resposta)
+
+    let pw = prompt("Digite uma nova senha: ")
+    let pw2 = prompt("Digite a senha novamente: ")
+    if(pw == pw2){
+      setSenha(pw2)
+    }else{
+      alert("As senhas não coincidem.")
+    }
   }
 
   return (
     <>
+      <Convert />
+
       <h1>Estados</h1>
       Nome: {nome}
       <div>
-        Usuário: {usuario}
+        Usuário: {usuario} 
+        Senha: {senha}
       </div>
       <button onClick={lerNome}>Trocar nome</button>
       <button onClick={lerUsuario}>Trocar usuário</button>
