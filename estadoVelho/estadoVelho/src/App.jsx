@@ -28,9 +28,6 @@ function App() {
 
   return (
     <>
-      <Convert />
-      <Convert2 />
-
       <h1>Estados</h1>
       Nome: {nome}
       <div>
@@ -39,6 +36,9 @@ function App() {
       </div>
       <button onClick={lerNome}>Trocar nome</button>
       <button onClick={lerUsuario}>Trocar usuário</button>
+      
+      <Convert />
+      <Convert2 />
     </>
   )
 }
