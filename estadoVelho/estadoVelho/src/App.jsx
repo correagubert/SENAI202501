@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 import Convert from './components/Convert'
+import Convert2 from './components/Convert2'
 
 function App() {
   const [nome, setNome] = useState("Ulib")
@@ -28,6 +29,7 @@ function App() {
   return (
     <>
       <Convert />
+      <Convert2 />
 
       <h1>Estados</h1>
       Nome: {nome}

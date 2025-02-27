@@ -5,15 +5,15 @@ function Convert() {
   const [pesoMex, setPesoMex] = useState(0)
 function converterDinheiro() {
   let entrada = Number(prompt("R$: "))
-  setPesoMex(entrada * 0.28.toFixed(2))
-  setReal(entrada)
+  setPesoMex((entrada * 3.52).toFixed(2))
+  setReal(entrada.toFixed(2))
 }
 return (
     <div className="container-convert">
       <h2>Real ➡️ Peso Mexicano</h2>
       <button onClick={converterDinheiro}>Converter</button>
       <p>
-        Valor original: R${real}
+        Valor original: {real}
       </p>
       <p>
         Valor convertido: Mex${pesoMex}
