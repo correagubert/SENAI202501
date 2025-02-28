@@ -13,7 +13,7 @@ return (
       <h2>Real ➡️ Peso Mexicano</h2>
       <button onClick={converterDinheiro}>Converter</button>
       <p>
-        Valor original: {real}
+        Valor original: R${real}
       </p>
       <p>
         Valor convertido: Mex${pesoMex}
