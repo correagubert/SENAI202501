@@ -36,7 +36,7 @@ function kelv() {
 }
     
   return (
-    <div>
+    <div className='containerTemp'>
         Conversão de Temperaturas
         <button onClick={selectConv}>Converter</button>
         <p>Temperatura em Celsius: {celsius}</p>
