@@ -4,8 +4,30 @@
   align-items: flex-start;
   gap: 20px;
   flex-wrap: wrap;
+  background-color: burlywood;
+  padding: 10px;
 }
 
+.cards{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  flex-wrap: wrap;
+  background-color: rgb(233, 189, 131);
+}
+
+.form-produto{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  color: aliceblue;
+  border: 1px solid #002115;
+  padding: 10px;
+  border-radius: 10px;
+}
 
 #root {
   max-width: 1280px;
