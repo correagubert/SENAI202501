@@ -14,6 +14,7 @@ function Controle() {
             let novoValor = saldo + valor
             setSaldo(novoValor)
             setValor('')
+            setNomeMovimentacao('')
         }
     }
 
@@ -24,6 +25,7 @@ function Controle() {
             let novoValor = saldo - valor
             setSaldo(novoValor)
             setValor('')
+            setNomeMovimentacao('')
         }
     }
 
@@ -33,9 +35,9 @@ function Controle() {
         <p>Saldo: {saldo}</p>
         <div className='controlinho-inputs'>
             <label htmlFor="">Nome da Movimentação: </label>
-            <input type="text" placeholder='Nome da movimentação...' id="nome-movimentacao" onChange={(event) => setNomeMovimentacao(event.target.value)}/>
+            <input type="text" placeholder='Nome da movimentação...' id="nome-movimentacao" value={movimentacao} onChange={(event) => setNomeMovimentacao(event.target.value)}/>
             <label htmlFor="">Valor: </label>
-            <input type='number' placeholder='Valor...' id='valor-movimentacao'  onChange={(event) => setValor(Number(event.target.value))}/>
+            <input type='Number' placeholder='Valor...' id='valor-movimentacao' value={valor} onChange={(event) => setValor(Number(event.target.value))}/>
         </div>
         <div className='controlinho-buttons'>
             <button id='credito' onClick={credito}>Crédito</button>
