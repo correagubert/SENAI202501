@@ -23,13 +23,13 @@ input{
 }
 
 #credito{
-    background-color: crimson;
+    background-color: greenyellow;
     border: none;
     border-radius: 3px;
 }
 
 #debito{
-    background-color: greenyellow;
+    background-color: crimson;
     border: none;
     border-radius: 3px;
 }
